@@ -1,0 +1,37 @@
+.documents__card {
+  background: #eee5e9;
+  border: none;
+  box-shadow: 2px 2px 6px 0px rgba(244, 0, 34, 0.3);
+  border-radius: 20px;
+  text-align: center;
+  width: 250px;
+  transition: transform 0.3s;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &:hover {
+    transform: translateY(5px);
+    box-shadow: 2px 2px 26px 0px rgba(244, 0, 34, 0.3);
+  }
+
+  .documents__card-image {
+    height: 350px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      opacity: 1;
+    }
+  }
+
+  .documents__card-title {
+    margin: 5px;
+    padding: 0px 10px;
+    font-weight: 500;
+  }
+
+}

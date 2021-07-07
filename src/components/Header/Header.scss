@@ -1,0 +1,56 @@
+.header-wrapper {
+  grid-area: header;
+  // border: 1px solid green;
+  width: 100%;
+}
+
+.header {
+  // background-color: #8bbd3e;
+  // background: url(../../assets/background.jpg) no-repeat 50% 50%;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 100px 1fr auto;
+  grid-template-areas: 
+      "logo fund contacts"
+      "navigation navigation navigation";
+  
+  .header__logo {
+    grid-area: logo;
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      display: block;
+    }
+  }
+
+  .fund {
+    grid-area: fund;
+
+    background-color: #FDEDC9;
+    color: #73c583;
+    padding: 5px 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+  }
+
+  .contacts {
+    grid-area: contacts;
+
+    background-color: #FDEDC9;
+    color: #73c583;
+    padding: 5px 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+

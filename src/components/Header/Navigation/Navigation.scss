@@ -1,0 +1,46 @@
+.navigation-wrapper {
+  grid-area: navigation;
+
+  display: flex;
+  justify-content: center;
+
+  box-shadow: 0 1px 4px 0 #939597;
+}
+
+.navigation {
+  display: flex;
+  width: 100%;
+
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+
+  .navigation__item {
+    margin: 5px;
+
+    flex: 1;
+    flex-shrink: 1;
+    text-align: center;
+
+    color: #939597;
+
+    &:hover, .active {
+      background-color: #F40022;
+      color: white;
+      font-weight: 400;
+      // border: 1px solid #939597;
+      border-radius: 20px;
+    }
+
+    a {
+      display: block;
+      text-decoration: none;
+      // color: black;
+      padding: 5px 10px;
+
+      &:hover {
+        color: white;
+      }
+    }
+  }
+}
